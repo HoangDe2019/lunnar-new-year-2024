@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="user-scalable=0">
+    <meta name="viewport" content="user-scalable=1">
     <meta property="og:url" content="https://tet.avnendv.id.vn">
     <meta property="og:type" content="website"/>
     <meta property="og:title" content="AVNENDV - PROFILE">
@@ -88,7 +88,7 @@
     document.addEventListener('click', function () {
         let audioEl = document.getElementById('audioEl')
         audioEl.setAttribute('src', audioList[Math.floor(Math.random() * audioList.length * 500)])
-        audioEl.setAttribute('muted', false)
+        audioEl.setAttribute('muted', null)
     }, {once: true})
 </script>
 </body>
