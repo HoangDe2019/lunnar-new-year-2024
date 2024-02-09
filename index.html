@@ -46,16 +46,7 @@
     </div>
 </div>
 
-<audio id="audioEl" autoplay></audio>
-
-<script type="application/javascript">
-    // JavaScript code to execute after a delay when the page loads
-    document.addEventListener("loadstart", function () {
-        setTimeout(function () {
-            window.location.reload()
-        }, 5000); // Delay in milliseconds (here, 2000 milliseconds or 2 seconds)
-    });
-</script>
+<audio id="audioEl" autoplay preload="auto" autocapitalize="on"></audio>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/329180/fscreen%401.0.1.js"></script>
 <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/329180/Stage%400.1.4.js"></script>
