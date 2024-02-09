@@ -63,7 +63,7 @@
 <script type="text/javascript">
     let TIME_WRITER = 300;
     let arrayList = [
-        "Chúc mừng năm mới, đầy đủ sức khỏe, \nChúc cho tình yêu của chúng ta ngày càng trở nên mới mẻ trong năm mới.\nMong rằng chúng ta sẽ luôn bên nhau, chia sẻ niềm vui và nâng đỡ nhau qua mọi khó khăn",
+        "Chúc mừng năm mới, đầy đủ sức khỏe, \nChúc cho tình yêu của chúng ta ngày càng trở nên \n mới mẻ trong năm mới.\nMong rằng chúng ta sẽ luôn bên nhau, chia sẻ niềm vui và nâng đỡ nhau qua mọi khó khăn",
         "Năm mới mới đến gia đình của em an khang, tài lộc đầy nhà.\nMong rằng những khoảnh khắc sum họp sẽ trở nên đáng nhớ và ý nghĩa hơn bao giờ hết.",
         "Năm mới rộn ràng như bông hoa nở, sẽ mang lại nhiều cơ hội mới, sự phát triển trong công việc đến cho em.\nChúc em luôn có động lực và niềm đam mê để tiếp tục đi đến thành công lớn hơn.",
         "Năm mới đến, hãy để những lo lắng ở năm cũ,\n mở cửa trái tim đón nhận niềm tin mới, hy vọng mới và những cơ hội mới đến với em...",
@@ -83,12 +83,10 @@
         '/assets/audio/NamQuaDaLamGi-BuiCongNam-8309403.mp3',
         '/assets/audio/NgayTetQueEm-PhuongMyChi-3791865.mp3',
         '/assets/audio/NgayXuanLongPhungSumVay-VA-2712302.mp3',
-        '/assets/audio/TetDoanVien-HoangTramThucQuyen-5909186.mp3',
-        '/assets/audio/TetDongDay-KHOANguyenKhoa-5850771.mp3',
         '/assets/audio/VeNhaAnTet-BigDaddyJustaTee-8488048.mp3',
     ];
     document.addEventListener('click', function () {
-        const audioEl = document.getElementById('audioEl')
+        let audioEl = document.getElementById('audioEl')
         audioEl.setAttribute('src', audioList[Math.floor(Math.random() * audioList.length * 500)])
         audioEl.setAttribute('muted', false)
     }, {once: true})
