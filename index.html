@@ -3,16 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="user-scalable=1">
-    <meta property="og:url" content="https://tet.avnendv.id.vn">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:type" content="website"/>
-    <meta property="og:title" content="AVNENDV - PROFILE">
-    <meta property="og:image" content="https://avnendv.id.vn/assets/images/favicon.png">
-    <meta property="og:description" content="Chúc mừng năm mới - Giáp Thìn 2024 - AVNENDV">
-    <meta name="description" content="Chúc mừng năm mới - Giáp Thìn 2024 - AVNENDV">
+    <meta property="og:description" content="Chúc mừng năm mới - Giáp Thìn 2024">
+    <meta name="description" content="Chúc mừng năm mới - Giáp Thìn 2024">
 
-    <title>HAPPY NEW YEAR - 2024 | AVNENDV</title>
-    <link href="https://avnendv.id.vn/assets/images/favicon.png" rel="icon">
+    <title>HAPPY NEW YEAR - 2024</title>
+    <link href="assets/img/dragon.webp" rel="icon">
 
     <link rel="stylesheet" href="assets/css/self.min.css">
     <link rel="stylesheet" href="assets/css/count_down.min.css">
@@ -22,7 +19,6 @@
 
 <body>
 <video src="./video/fireworks.mp4" muted playsinline autoplay loop></video>
-<audio src="./Tieng-phao-hoa-no-tren-bau-troi-www_tiengdong_com.mp3" autoplay autocapitalize="on" loop preload="auto"></audio>
 <canvas id="canvasSnow"></canvas>
 
 <div class="holder">
@@ -76,7 +72,7 @@
 <script src="assets/js/script.min.js"></script>
 <script>
     const audioList = [
-        '/assets/audio/Di-Ve-Nha-Den-JustaTee.mp3',
+        '/assets/audio/VuiLamNha-HuongLyJombie-7198385.mp3',
         '/assets/audio/ChuyenCuBoQua3-TrucNhanRickyStar-6896732.mp3',
         '/assets/audio/DiDeTroVe-SoobinHoangSon-4726882.mp3',
         '/assets/audio/DoanCaXuan-DamVinhHung_3m7k6.mp3',
@@ -87,8 +83,8 @@
     ];
     document.addEventListener('click', function () {
         let audioEl = document.getElementById('audioEl')
-        audioEl.setAttribute('src', audioList[Math.floor(Math.random() * audioList.length * 500)])
-        audioEl.setAttribute('muted', null)
+        audioEl.setAttribute('src', audioList[Math.floor(Math.random() * audioList.length)])
+        audioEl.setAttribute('muted', false)
     }, {once: true})
 </script>
 </body>
